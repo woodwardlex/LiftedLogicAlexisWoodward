@@ -1,0 +1,213 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+/*Google Font
+    font-family: 'Karla', sans-serif;
+
+    Hero - 'Karla', bold, 65px, 0.73 character spacing, 76 line spacing
+    H1 - 'Karla', bold, 40px, 0 character spacing, 50 line spacing
+    H2 - 'Karla', bold, 30px, 0 character spacing, 40 line spacing
+    H3 - 'Karla', bold, 16px, 1 character spacing, 25 line spacing
+    Button - 'Karla', bold, 14px, 0 character spacing, 18 line spacing
+    Body - 'Karla', regular, 16px, 0 character spacing, 25 line spacing
+*/
+
+/*Colors
+    #001D5D - dark blue
+    #B8BFCF - light blue
+    #68C242 - dark green
+    #D9F0D0 - light green
+    #F6F6F6 - light grey
+    #525252 - dark grey
+    #FFFFFF - white
+    #000000 - balck
+*/
+
+body {
+    /*background-image: url('../images/image1.png');*/
+    font-family: 'Karla', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+.hero {
+    font-family: 'Karla', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 0.73px;
+    line-height: 76px;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 50px;
+    color: #001D5D; /*dark blue*/
+}
+.releases h1{
+    text-align:center;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: #001D5D; /*dark blue*/
+}
+
+h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #68C242; /*dark green*/
+}
+
+.button {
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 18px;
+    color: #68C242; /*dark green*/
+    background-color: #D9F0D0; /*light green*/
+}
+
+nav a.logo img {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+header nav {
+    padding: 1em 1em 2.5em 2.5em;
+}
+
+    header nav ul {
+        display: inline-block;
+        text-decoration: none;
+        padding-left: 12em;
+        padding-bottom: 10px;
+        margin-top: 0;
+    }
+
+        header nav ul li {
+            /*text-decoration: none;*/
+            display: inline-block;
+            list-style: none;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+
+nav a {
+    text-decoration: none;
+    color: #001D5D; /*dark blue*/
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    width: 200px;
+}
+
+    nav a img {
+        padding-right: 4px;
+        padding-top: 15px;
+    }
+
+.paradox {
+    background-image: url('../images/image1.png');
+}
+
+    .paradox p {
+        text-align: left;
+        color: white;
+        margin-right: 15em;
+        padding: 1em;
+        color: #FFFFFF;/*white*/
+    }
+
+.smallLinks {
+    color: #FFFFFF;/*white*/
+    font-weight: bold;
+    padding: 1em;
+    text-align: left;
+}
+
+.brentPic {
+    float: left;
+    width:35%;
+}
+
+.brent{
+    float:right;
+    width:55%;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#flex {
+    display: flex;
+    flex-direction:column;
+}
+
+.songTiles {
+    width: 40em;
+    height:20em;
+    box-shadow: 16px 16px 16px 16px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float:left;
+}
+
+.tillerPic{    
+    float: left;
+    width: 35%;
+}
+
+.tiller{
+    float:right;
+    width: 55%;
+}
+
+.content{
+    float: left;
+    width: 55%;
+}
+
+.contactPic{
+    float:right;
+    width:33%;
+}
+
+.releases {
+    background-color: #F6F6F6;
+}
+
+p.releasesText{
+    font-weight:500;
+    text-align:center;
+}
+
+footer {
+    background-color: #001D5D; /*dark blue*/
+    color: #FFFFFF; /*white*/
+}
+
+hr{
+    width:95%;
+}
+.containerFoot{
+    width:100%;
+    text-align:left;
+}
+
+tr th img{
+
+}

@@ -1,0 +1,436 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A205880F-D4AE-4DF5-9426-A5198E329FB1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiftedLogicAlexisWoodward</RootNamespace>
+    <AssemblyName>LiftedLogicAlexisWoodward</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\Custom.css" />
+    <Content Include="Content\icons\Artists.png" />
+    <Content Include="Content\icons\Concerts.png" />
+    <Content Include="Content\icons\dropdown_triangle.png" />
+    <Content Include="Content\icons\Home.png" />
+    <Content Include="Content\icons\Instagram.png" />
+    <Content Include="Content\icons\left_controller.png" />
+    <Content Include="Content\icons\Location_pin.png" />
+    <Content Include="Content\icons\Music.png" />
+    <Content Include="Content\icons\Play_button.png" />
+    <Content Include="Content\icons\Records.png" />
+    <Content Include="Content\icons\Right_controller.png" />
+    <Content Include="Content\icons\Snapchaat.png" />
+    <Content Include="Content\icons\Twitter.png" />
+    <Content Include="Content\icons\Youtube.png" />
+    <Content Include="Content\images\image1.png" />
+    <Content Include="Content\images\image2.png" />
+    <Content Include="Content\images\image3.png" />
+    <Content Include="Content\images\image4.png" />
+    <Content Include="Content\jQuery\jquery-main\AUTHORS.txt" />
+    <Content Include="Content\jQuery\jquery-main\build\release.js" />
+    <Content Include="Content\jQuery\jquery-main\build\release\cdn.js" />
+    <Content Include="Content\jQuery\jquery-main\build\release\dist.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\amd.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\build.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\dist.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\lib\rollup-plugin-file-overrides.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\lib\spawn_test.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\node_smoke_tests.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\promises_aplus_tests.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\qunit_fixture.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\sourcemap.js" />
+    <Content Include="Content\jQuery\jquery-main\build\tasks\testswarm.js" />
+    <Content Include="Content\jQuery\jquery-main\Gruntfile.js" />
+    <Content Include="Content\jQuery\jquery-main\LICENSE.txt" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax.js" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax\jsonp.js" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax\load.js" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax\script.js" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax\var\location.js" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax\var\nonce.js" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax\var\rquery.js" />
+    <Content Include="Content\jQuery\jquery-main\src\ajax\xhr.js" />
+    <Content Include="Content\jQuery\jquery-main\src\attributes.js" />
+    <Content Include="Content\jQuery\jquery-main\src\attributes\attr.js" />
+    <Content Include="Content\jQuery\jquery-main\src\attributes\classes.js" />
+    <Content Include="Content\jQuery\jquery-main\src\attributes\prop.js" />
+    <Content Include="Content\jQuery\jquery-main\src\attributes\val.js" />
+    <Content Include="Content\jQuery\jquery-main\src\callbacks.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\access.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\camelCase.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\DOMEval.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\init.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\isAttached.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\nodeName.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\parseHTML.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\parseXML.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\ready-no-deferred.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\ready.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\readyException.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\stripAndCollapse.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\toType.js" />
+    <Content Include="Content\jQuery\jquery-main\src\core\var\rsingleTag.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\adjustCSS.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\cssCamelCase.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\curCSS.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\finalPropName.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\isAutoPx.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\showHide.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\support.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\var\cssExpand.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\var\getStyles.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\var\isHiddenWithinTree.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\var\rnumnonpx.js" />
+    <Content Include="Content\jQuery\jquery-main\src\css\var\swap.js" />
+    <Content Include="Content\jQuery\jquery-main\src\data.js" />
+    <Content Include="Content\jQuery\jquery-main\src\data\Data.js" />
+    <Content Include="Content\jQuery\jquery-main\src\data\var\acceptData.js" />
+    <Content Include="Content\jQuery\jquery-main\src\data\var\dataPriv.js" />
+    <Content Include="Content\jQuery\jquery-main\src\data\var\dataUser.js" />
+    <Content Include="Content\jQuery\jquery-main\src\deferred.js" />
+    <Content Include="Content\jQuery\jquery-main\src\deferred\exceptionHook.js" />
+    <Content Include="Content\jQuery\jquery-main\src\deprecated.js" />
+    <Content Include="Content\jQuery\jquery-main\src\deprecated\ajax-event-alias.js" />
+    <Content Include="Content\jQuery\jquery-main\src\deprecated\event.js" />
+    <Content Include="Content\jQuery\jquery-main\src\dimensions.js" />
+    <Content Include="Content\jQuery\jquery-main\src\effects.js" />
+    <Content Include="Content\jQuery\jquery-main\src\effects\animatedSelector.js" />
+    <Content Include="Content\jQuery\jquery-main\src\effects\Tween.js" />
+    <Content Include="Content\jQuery\jquery-main\src\event.js" />
+    <Content Include="Content\jQuery\jquery-main\src\event\trigger.js" />
+    <Content Include="Content\jQuery\jquery-main\src\exports\amd.js" />
+    <Content Include="Content\jQuery\jquery-main\src\exports\global.js" />
+    <Content Include="Content\jQuery\jquery-main\src\jquery.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation\buildFragment.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation\getAll.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation\setGlobalEval.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation\var\rscriptType.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation\var\rtagName.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation\wrapMap.js" />
+    <Content Include="Content\jQuery\jquery-main\src\manipulation\_evalUrl.js" />
+    <Content Include="Content\jQuery\jquery-main\src\offset.js" />
+    <Content Include="Content\jQuery\jquery-main\src\queue.js" />
+    <Content Include="Content\jQuery\jquery-main\src\queue\delay.js" />
+    <Content Include="Content\jQuery\jquery-main\src\selector.js" />
+    <Content Include="Content\jQuery\jquery-main\src\selector\contains.js" />
+    <Content Include="Content\jQuery\jquery-main\src\selector\escapeSelector.js" />
+    <Content Include="Content\jQuery\jquery-main\src\selector\rbuggyQSA.js" />
+    <Content Include="Content\jQuery\jquery-main\src\selector\uniqueSort.js" />
+    <Content Include="Content\jQuery\jquery-main\src\selector\var\whitespace.js" />
+    <Content Include="Content\jQuery\jquery-main\src\serialize.js" />
+    <Content Include="Content\jQuery\jquery-main\src\traversing.js" />
+    <Content Include="Content\jQuery\jquery-main\src\traversing\findFilter.js" />
+    <Content Include="Content\jQuery\jquery-main\src\traversing\var\dir.js" />
+    <Content Include="Content\jQuery\jquery-main\src\traversing\var\rneedsContext.js" />
+    <Content Include="Content\jQuery\jquery-main\src\traversing\var\siblings.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\arr.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\class2type.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\document.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\documentElement.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\flat.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\fnToString.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\getProto.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\hasOwn.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\indexOf.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\isIE.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\isWindow.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\ObjectFunctionString.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\pnum.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\pop.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\push.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\rcheckableType.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\rcssNum.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\rnothtmlwhite.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\slice.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\sort.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\support.js" />
+    <Content Include="Content\jQuery\jquery-main\src\var\toString.js" />
+    <Content Include="Content\jQuery\jquery-main\src\wrap.js" />
+    <Content Include="Content\jQuery\jquery-main\src\wrapper.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\1x1.jpg" />
+    <Content Include="Content\jQuery\jquery-main\test\data\1x1.svg" />
+    <Content Include="Content\jQuery\jquery-main\test\data\ajax\onunload.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\ajax\unreleasedXHR.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\badcall.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\badjson.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\cleanScript.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\core\aliased.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\core\dynamic_ready.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\core\globaleval-context.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\core\jquery-iterability-transpiled-es6.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\core\jquery-iterability-transpiled.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\core\onready.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-ajax-script-downloaded.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-ajax-script.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-ajax-script.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-nonce-external.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-nonce-external.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-nonce-globaleval.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-nonce-globaleval.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-nonce.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp-nonce.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\csp.include.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\css\cssWidthBeforeDocReady.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\css\cssWidthBrowserZoom.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\dashboard.xml" />
+    <Content Include="Content\jQuery\jquery-main\test\data\data\dataAttrs.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\dimensions\documentLarge.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\event\focusElem.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\event\focusinCrossFrame.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\event\interactiveReady.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\event\onbeforeunload.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\event\promiseReady.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\event\syncReady.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\event\triggerunload.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\frame.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\iframe.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\iframeTest.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\inner_module.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\inner_nomodule.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\jquery-1.9.1.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\json_obj.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\manipulation\iframe-denied.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\manipulation\scripts-context.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\manipulation\set-global-scripttest.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\mock.php" />
+    <Content Include="Content\jQuery\jquery-main\test\data\module.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\name.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\nomodule.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\absolute.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\body.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\boxes.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\fixed.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\relative.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\scroll.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\static.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\offset\table.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\qunit-fixture.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\readywait.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\selector\cache.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\selector\html5_selector.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\selector\mixed_sort.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\support\bodyBackground.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\support\csp.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\support\getComputedSupport.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\test.include.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\test2.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\test3.html" />
+    <Content Include="Content\jQuery\jquery-main\test\data\testinit-jsdom.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\testinit.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\testrunner.js" />
+    <Content Include="Content\jQuery\jquery-main\test\data\testsuite.css" />
+    <Content Include="Content\jQuery\jquery-main\test\data\text.txt" />
+    <Content Include="Content\jQuery\jquery-main\test\data\with_fries.xml" />
+    <Content Include="Content\jQuery\jquery-main\test\delegatetest.html" />
+    <Content Include="Content\jQuery\jquery-main\test\hovertest.html" />
+    <Content Include="Content\jQuery\jquery-main\test\index.html" />
+    <Content Include="Content\jQuery\jquery-main\test\integration\data\gh-1764-fullscreen-iframe.css" />
+    <Content Include="Content\jQuery\jquery-main\test\integration\data\gh-1764-fullscreen-iframe.html" />
+    <Content Include="Content\jQuery\jquery-main\test\integration\data\gh-1764-fullscreen.js" />
+    <Content Include="Content\jQuery\jquery-main\test\integration\gh-1764-fullscreen.html" />
+    <Content Include="Content\jQuery\jquery-main\test\integration\gh-2343-ie-radio-click.html" />
+    <Content Include="Content\jQuery\jquery-main\test\jquery.js" />
+    <Content Include="Content\jQuery\jquery-main\test\karma.context.html" />
+    <Content Include="Content\jQuery\jquery-main\test\karma.debug.html" />
+    <Content Include="Content\jQuery\jquery-main\test\localfile.html" />
+    <Content Include="Content\jQuery\jquery-main\test\middleware-mockserver.js" />
+    <Content Include="Content\jQuery\jquery-main\test\networkerror.html" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\document_missing.js" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\document_passed.js" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\document_present_originally.js" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\iterable_with_native_symbol.js" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\lib\ensure_global_not_created.js" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\lib\ensure_iterability_es6.js" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\lib\ensure_jquery.js" />
+    <Content Include="Content\jQuery\jquery-main\test\promises_aplus_adapters\deferred.js" />
+    <Content Include="Content\jQuery\jquery-main\test\promises_aplus_adapters\when.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\ajax.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\animation.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\attributes.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\basic.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\callbacks.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\core.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\css.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\data.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\deferred.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\deprecated.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\dimensions.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\effects.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\event.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\exports.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\manipulation.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\offset.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\queue.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\ready.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\selector.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\serialize.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\support.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\traversing.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\tween.js" />
+    <Content Include="Content\jQuery\jquery-main\test\unit\wrap.js" />
+    <Content Include="Content\jQuery\jquery-main\test\xhtml.php" />
+    <Content Include="Content\js\html5shiv.js" />
+    <Content Include="Content\logo\SRrecordings.png" />
+    <Content Include="Content\logo\SRrecordings_white.png" />
+    <Content Include="Index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\fonts\Karla-Italic-VariableFont_wght.ttf" />
+    <Content Include="Content\css\fonts\Karla-VariableFont_wght.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-Bold.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-BoldItalic.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-ExtraBold.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-ExtraBoldItalic.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-ExtraLight.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-ExtraLightItalic.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-Italic.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-Light.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-LightItalic.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-Medium.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-MediumItalic.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-Regular.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-SemiBold.ttf" />
+    <Content Include="Content\css\fonts\static\Karla-SemiBoldItalic.ttf" />
+    <Content Include="Content\jQuery\jquery-main\.editorconfig" />
+    <Content Include="Content\jQuery\jquery-main\.eslintignore" />
+    <Content Include="Content\jQuery\jquery-main\.eslintrc-browser.json" />
+    <Content Include="Content\jQuery\jquery-main\.eslintrc-node.json" />
+    <Content Include="Content\jQuery\jquery-main\.eslintrc.json" />
+    <Content Include="Content\jQuery\jquery-main\.gitattributes" />
+    <Content Include="Content\jQuery\jquery-main\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="Content\jQuery\jquery-main\.github\lock.yml" />
+    <Content Include="Content\jQuery\jquery-main\.github\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="Content\jQuery\jquery-main\.github\workflows\codeql-analysis.yml" />
+    <Content Include="Content\jQuery\jquery-main\.gitignore" />
+    <Content Include="Content\jQuery\jquery-main\.mailmap" />
+    <Content Include="Content\jQuery\jquery-main\.npmignore" />
+    <Content Include="Content\jQuery\jquery-main\.npmrc" />
+    <Content Include="Content\jQuery\jquery-main\.travis.yml" />
+    <Content Include="Content\jQuery\jquery-main\build\fixtures\README.md" />
+    <Content Include="Content\jQuery\jquery-main\CODE_OF_CONDUCT.md" />
+    <Content Include="Content\jQuery\jquery-main\CONTRIBUTING.md" />
+    <Content Include="Content\jQuery\jquery-main\dist\.eslintrc.json" />
+    <Content Include="Content\jQuery\jquery-main\package.json" />
+    <Content Include="Content\jQuery\jquery-main\README.md" />
+    <Content Include="Content\jQuery\jquery-main\SECURITY.md" />
+    <Content Include="Content\jQuery\jquery-main\src\.eslintrc.json" />
+    <Content Include="Content\jQuery\jquery-main\test\.eslintrc.json" />
+    <Content Include="Content\jQuery\jquery-main\test\data\support\csp.log" />
+    <Content Include="Content\jQuery\jquery-main\test\node_smoke_tests\.eslintrc.json" />
+    <Content Include="Content\jQuery\jquery-main\test\promises_aplus_adapters\.eslintrc.json" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50936</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50936/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
