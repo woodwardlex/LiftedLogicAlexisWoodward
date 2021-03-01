@@ -17,10 +17,10 @@
     <header>
         <nav>
             <!--class="nav"-->
-            <a href="index.html" class="logo">
-                <img src="Content/logo/SRrecordings.png" alt="Snyder Recordings" />
+            <a style="padding-bottom: 2em; float:left;" href="index.html" class="logo">
+                <img id="logo" src="Content/logo/SRrecordings.png" alt="Snyder Recordings" />
             </a>
-            <ul>
+            <ul style="margin-top:1em; float:left;">
                 <!--TODO 1: create hover functionaity-->
                 <li>
                     <a href="index.html"><img src="Content/icons/Home.png" /> Home</a>
@@ -43,8 +43,8 @@
     </header>
     <main>
         <!--"A.M. Paradox"-->
-        <section class="paradox">
-            <p class="hero">A.M. Paradox</p>
+        <section id="animationBack">
+            <div class="hero">A.M. Paradox</div>
             <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He released his debut project, an extended play entitled A.M. Paradox, in 2016.</p>
             <a class="smallLinks">
                 <img src="Content/icons/Play_button.png" /> Watch Video
@@ -67,6 +67,7 @@
             <h1>New Releases</h1>
             <p class="relasesText">New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</p>
             <div id="flex">
+                <!--single card-->
                 <div class="songTiles">
                     <div class="tillerPic">
                         <img src="Content/images/image4.png" />
@@ -74,11 +75,12 @@
                     <div class="tiller">
                         <h2>Trapsoul</h2>
                         <h3>
-                            Bryson Tiller
+                            BRYSON TILLER
                         </h3>
                         <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol. 1.</p>
                     </div>
                 </div>
+                <!--single card-->
                 <div class="songTiles">
                     <div class="tillerPic">
                         <img src="Content/images/image4.png" />
@@ -86,11 +88,12 @@
                     <div class="tiller">
                         <h2>Trapsoul</h2>
                         <h3>
-                            Bryson Tiller
+                            BRYSON TILLER
                         </h3>
                         <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol. 1.</p>
                     </div>
                 </div>
+                <!--single card-->
                 <div class="songTiles">
                     <div class="tillerPic">
                         <img src="Content/images/image4.png" />
@@ -98,13 +101,13 @@
                     <div class="tiller">
                         <h2>Trapsoul</h2>
                         <h3>
-                            Bryson Tiller
+                            BRYSON TILLER
                         </h3>
                         <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol. 1.</p>
                     </div>
                 </div>
             </div>
-            <div class="clearfix" id="slider">
+            <div class="clearfix arrows">
                 <img src="Content/icons/left_controller.png" id="left"/> <img src="Content/icons/Right_controller.png" id="right"/>
             </div>
         </section>
@@ -114,7 +117,7 @@
         </secion>
         <!-- Contact -->
         <section>
-            <div class="content">
+            <div class="contact">
                 <h1>Get In Touch</h1>
                 <p>New albums every single month, check out the newest & best from Snyder Recording artists, now available on Apple Music & Spotify.</p>
                 <form>
@@ -206,39 +209,27 @@
 </body>
 </html>
 <script>
-    $('#flex').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1008,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: "unslick"
-            }
-        ]
-    });
+    var slideIndex = 1
+    showSlides(slideIndex)
+
+    function plusSlide(n) {
+        showSlides(slideIndex += n)
+    }
+
+    function showSlides(n) {
+        var slides = document.getElementsByClassName("songTiles")
+        if (n > slides.length) {
+            slideIndex=1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.backgroundColor = "#E6E6E6";
+        }
+        slides[slideIndex - 1].style.backgroundColor = "white";
+    }
 </script>
 <script>
-    //$(document).ready(function () {
-    //    functon left(){
-    //        onclick()
-    //    }
-    //})
+    /* On Click events */
 </script>
